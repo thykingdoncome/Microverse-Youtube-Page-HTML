@@ -1,5 +1,6 @@
 body {
     margin: auto;
+    background-color: #eeeeee;
 }
 
 .fa-bars,
@@ -50,5 +51,46 @@ ul {
 }
 
 .container {
-    width: %;
+    width: 100%;
+}
+
+.leftContent {
+    width: 60%;
+}
+
+.rightContent {
+    width: 40%;
+}
+
+.videoSummary {
+    padding: 5px;
+    border-color: black;
+    background-color: white;
+}
+
+.floatRight {
+    float: right;
+    position: relative;
+    bottom: 0px;
+}
+
+.floatLeft {
+    float: left;
+}
+
+.reactions {
+    width: 60%;
+    height: 30px;
+}
+
+.video {
+    width: inherit
+}
+
+.details {
+    display: inline-flex;
+}
+
+.subscribe {
+    display: block;
 }
