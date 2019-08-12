@@ -30,7 +30,7 @@ input {
 nav button {
     height: 40px;
     width: 150px;
-    background-color: blue;
+    background: #267AC6;
     padding: 10px;
 }
 
@@ -47,4 +47,8 @@ ul {
 
 .upload {
     background-color: white;
+}
+
+.container {
+    width: %;
 }
