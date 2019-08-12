@@ -1,0 +1,50 @@
+body {
+    margin: auto;
+}
+
+.fa-bars,
+.fa-search {
+    color: black;
+    font-size: 30px;
+}
+
+nav img {
+    height: 40px;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    margin: 0px;
+}
+
+.searchBar {
+    align-self: center;
+}
+
+input {
+    width: 40rem;
+    padding: 10px;
+}
+
+nav button {
+    height: 40px;
+    width: 150px;
+    background-color: blue;
+    padding: 10px;
+}
+
+li {
+    list-style: none;
+    display: inline;
+}
+
+ul {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.upload {
+    background-color: white;
+}
