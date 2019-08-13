@@ -2,7 +2,6 @@
     width: 100%;
 }
 
-
 html,
 body,
 div,
@@ -10,13 +9,6 @@ span,
 applet,
 object,
 iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
 blockquote,
 pre,
 a,
@@ -82,8 +74,7 @@ section,
 summary,
 time,
 mark,
-audio,
-video {
+audio {
     margin: 0;
     padding: 0;
     border: 0;
@@ -92,7 +83,9 @@ video {
     vertical-align: baseline;
 }
 
+
 /* HTML5 display-role reset for older browsers */
+
 article,
 aside,
 details,
@@ -207,7 +200,7 @@ i {
 
 .sign {
     margin-top: .8em;
-    padding:10px ;
+    padding: 10px;
     text-decoration: none;
     background: blueviolet;
     color: white;
@@ -224,12 +217,14 @@ i {
 }
 
 .rightContent {
-    width: 40%; 
+    width: 40%;
     margin-top: 5em;
     display: block;
+    background-color: white;
 }
 
-.videoSummary {
+.videoSummary,
+.videoDetails {
     padding: 2em;
     border-color: black;
     background-color: white;
@@ -263,7 +258,8 @@ i {
 }
 
 .video {
-    width: inherit;
+    width: 100%;
+    padding: 20px 0px;
 }
 
 .details {
@@ -278,4 +274,51 @@ i {
 
 .subscribe {
     display: block;
+}
+
+.upNext {
+    display: inline-flex;
+    justify-content: space-evenly;
+    padding: 0px 0px 20px 0px;
+    background-color: white;
+}
+
+.nextRecommended {
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+
+.sideVid {
+    display: inline-flex;
+    justify-content: space-evenly;
+    max-height: 100px;
+    padding: 10px;
+    /* align-content: left; */
+}
+
+.loading {
+    padding: 30px;
+    background-color: white;
+    border-color: black;
+    box-shadow: #eeeeee;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    /* Light grey */
+    border-top: 16px solid gray;
+    /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
