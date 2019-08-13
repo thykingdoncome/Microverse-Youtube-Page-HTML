@@ -147,6 +147,11 @@ i {
     color: black;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
 .head1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -198,44 +203,52 @@ i {
     left: 17px;
 }
 
-.sign {
-    margin-top: .8em;
-    padding: 10px;
-    text-decoration: none;
+.sign {  
     background: blueviolet;
     color: white;
-    height: 10px;
+   
 }
 
 .bodyContent {
     width: 100%;
     display: flex;
+    margin-top: 4em;
+    justify-content: space-evenly;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .leftContent {
-    width: 60%;
+    width: 65%;
+    padding: 0 1em
 }
 
 .rightContent {
-    width: 40%;
-    margin-top: 5em;
+    width: 30%;
+    margin-top: 1.2em;
     display: block;
     background-color: white;
 }
 
 .videoSummary,
 .videoDetails {
-    padding: 2em;
+    padding: .9em;
     border-color: black;
     background-color: white;
 }
 
 .videoSummary h2 {
-    font-size: 3em;
+    font-size: 2.2em;
+    margin: .4em;
+}
+
+.icon{
+    padding-top: 1em;
 }
 
 .videoSummary h4 {
     font-size: 1.5em;
+    margin: 1em 0;
 }
 
 .floatRight {
@@ -244,17 +257,12 @@ i {
     top: 80px;
 }
 
-.flow i {
-    /* display:inline-flex;
-    justify-content: space-evenly */
-}
-
 .reactions {
     width: 100%;
     display: inline-flex;
     justify-content: space-between;
-    width: 60%;
-    height: 30px;
+
+    /* height: 30px; */
 }
 
 .video {
@@ -262,9 +270,14 @@ i {
     padding: 20px 0px;
 }
 
+.video object {
+    width: 100%;
+    min-height: 60vh;
+}
+
 .details {
-    padding: 1em 0;
-    display: inline-flex;
+    padding: .5em;
+    display: inline-flex
 }
 
 .details img {
@@ -274,16 +287,23 @@ i {
 
 .subscribe {
     display: block;
+    line-height: 3px;
+    padding-left: 1em;
 }
 
 .upNext {
-    display: inline-flex;
-    justify-content: space-evenly;
-    padding: 0px 0px 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
     background-color: white;
 }
 
+#nxtBtn{
+    margin-top: .8em
+}
+
 .nextRecommended {
+    padding: 0 1em;
     display: inline-flex;
     justify-content: space-evenly;
 }
@@ -296,11 +316,30 @@ i {
     /* align-content: left; */
 }
 
+.sideTxt{
+        margin-left: 1em;
+        position: relative;
+        bottom: 1em
+}
+
 .loading {
     padding: 30px;
     background-color: white;
     border-color: black;
     box-shadow: #eeeeee;
+}
+
+.more{
+    padding: 2em 0;
+    text-align: center;
+}
+
+.load{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    width: 100%;
 }
 
 .loader {
