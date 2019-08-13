@@ -1,57 +1,222 @@
-body {
-    margin: auto;
-    background-color: #eeeeee;
+.container {
+    width: 100%;
 }
 
-.fa-bars,
-.fa-search {
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    background-color: #eeeeee;
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+header {
+    grid-area: header;
+    height: 55px;
+    border-bottom: 3px solid lightgrey;
+    display: grid;
+    grid-template-columns: 150px 1fr 250px;
+    padding: 0 10px 0 10px;
+    margin-bottom: 10px;
+    position: fixed;
+    top: -0.2em;
+    width: 100%;
+    z-index: 1;
+    background: white;
+}
+
+i {
     color: black;
+}
+
+.head1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.fa-bars {
+    position: relative;
+    top: 10px;
     font-size: 30px;
 }
 
-nav img {
-    height: 40px;
+.ytlogo {
+    height: 35px;
+    position: relative;
+    top: 6px;
+    margin-left: 20px;
 }
 
-nav {
-    display: flex;
+.head2 form {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.head2 form input {
+    font-size: 103%;
     width: 100%;
-    margin: 0px;
+    position: relative;
+    top: 12px;
+    padding: 4px;
 }
 
-.searchBar {
-    align-self: center;
+.fa-search {
+    float: right;
+    position: relative;
+    top: -10px;
+    height: 28px;
+    width: 40px;
+    left: 10px;
 }
 
-input {
-    width: 40rem;
-    padding: 10px;
-}
-
-nav button {
-    height: 40px;
-    width: 150px;
-    background: #267AC6;
-    padding: 10px;
-}
-
-li {
-    list-style: none;
-    display: inline;
-}
-
-ul {
+.head3 {
     display: inline-flex;
-    width: 100%;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
-.upload {
-    background-color: white;
+.fa-upload {
+    position: relative;
+    top: 13px;
+    left: 17px;
 }
 
-.container {
+.sign {
+    margin-top: .8em;
+    padding:10px ;
+    text-decoration: none;
+    background: blueviolet;
+    color: white;
+    height: 10px;
+}
+
+.bodyContent {
     width: 100%;
+    display: flex;
 }
 
 .leftContent {
@@ -59,36 +224,56 @@ ul {
 }
 
 .rightContent {
-    width: 40%;
+    width: 40%; 
+    margin-top: 5em;
+    display: block;
 }
 
 .videoSummary {
-    padding: 5px;
+    padding: 2em;
     border-color: black;
     background-color: white;
+}
+
+.videoSummary h2 {
+    font-size: 3em;
+}
+
+.videoSummary h4 {
+    font-size: 1.5em;
 }
 
 .floatRight {
     float: right;
     position: relative;
-    bottom: 0px;
+    top: 80px;
 }
 
-.floatLeft {
-    float: left;
+.flow i {
+    /* display:inline-flex;
+    justify-content: space-evenly */
 }
 
 .reactions {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
     width: 60%;
     height: 30px;
 }
 
 .video {
-    width: inherit
+    width: inherit;
 }
 
 .details {
+    padding: 1em 0;
     display: inline-flex;
+}
+
+.details img {
+    height: 60px;
+    border-radius: 50%;
 }
 
 .subscribe {
