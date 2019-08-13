@@ -94,3 +94,15 @@ ul {
 .subscribe {
     display: block;
 }
+
+.bodyContent {
+    display: inline-flex;
+    width: 100%;
+}
+
+.autoPlay {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+}
