@@ -147,7 +147,7 @@ i {
     color: black;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
@@ -203,10 +203,21 @@ a{
     left: 17px;
 }
 
-.sign {  
-    background: blueviolet;
-    color: white;
-   
+.fa-forward {
+    position: relative;
+    top: 13px;
+    left: 17px;
+}
+
+.fa-bell {
+    position: relative;
+    top: 13px;
+    left: 17px;
+}
+
+.sign {
+    position: relative;
+    top: 10px;
 }
 
 .bodyContent {
@@ -242,7 +253,7 @@ a{
     margin: .4em;
 }
 
-.icon{
+.icon {
     padding-top: 1em;
 }
 
@@ -261,7 +272,6 @@ a{
     width: 100%;
     display: inline-flex;
     justify-content: space-between;
-
     /* height: 30px; */
 }
 
@@ -298,7 +308,7 @@ a{
     background-color: white;
 }
 
-#nxtBtn{
+#nxtBtn {
     margin-top: .8em
 }
 
@@ -316,10 +326,10 @@ a{
     /* align-content: left; */
 }
 
-.sideTxt{
-        margin-left: 1em;
-        position: relative;
-        bottom: 1em
+.sideTxt {
+    margin-left: 1em;
+    position: relative;
+    bottom: 1em
 }
 
 .loading {
@@ -329,12 +339,12 @@ a{
     box-shadow: #eeeeee;
 }
 
-.more{
+.more {
     padding: 2em 0;
     text-align: center;
 }
 
-.load{
+.load {
     display: inline-flex;
     align-items: center;
     justify-content: space-around;
@@ -360,4 +370,8 @@ a{
     100% {
         transform: rotate(360deg);
     }
+}
+
+.head3 img {
+    border-radius: 50%;
 }
