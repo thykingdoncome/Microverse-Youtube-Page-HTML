@@ -183,13 +183,16 @@ a {
     padding: 4px;
 }
 
-.fa-search {
+.head2 button {
     float: right;
-    position: relative;
-    top: -10px;
+ position: relative;
+    top: -17px;
     height: 28px;
     width: 40px;
     left: 10px;
+    cursor: pointer; 
+    border: none;
+    background: white;
 }
 
 .head3 {
@@ -248,6 +251,10 @@ a {
     background-color: white;
 }
 
+.videoDetails {
+    font-size: 1.3em;
+}
+
 .videoSummary h2 {
     font-size: 2.2em;
     margin: .4em;
@@ -259,20 +266,38 @@ a {
 
 .videoSummary h4 {
     font-size: 1.5em;
-    margin: 1em 0;
+    margin: 1.7em 0;
 }
 
 .floatRight {
     float: right;
     position: relative;
+    bottom: 50px;
+}
+
+.subBtn {
+    background: red;
+    padding: 1em;
+    border: none;
+    color: white;
+    font-weight: 600;
+}
+
+.floatRight span{
+    position: relative;
     top: 80px;
+    left: 2em;
+    font-weight: 700;
 }
 
 .reactions {
     width: 100%;
     display: inline-flex;
     justify-content: space-between;
-    /* height: 30px; */
+}
+
+.flow i {
+    padding: 0 1em;
 }
 
 .video {
@@ -323,7 +348,6 @@ a {
     justify-content: space-evenly;
     max-height: 100px;
     padding: 10px;
-    /* align-content: left; */
 }
 
 .sideTxt {
@@ -354,9 +378,7 @@ a {
 
 .loader {
     border: 16px solid #f3f3f3;
-    /* Light grey */
     border-top: 16px solid gray;
-    /* Blue */
     border-radius: 50%;
     width: 120px;
     height: 120px;

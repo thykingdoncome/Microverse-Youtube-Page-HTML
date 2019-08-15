@@ -1,0 +1,405 @@
+
+
+body {
+    font-family: sans-serif;
+}
+
+
+
+/* Header */
+
+    header {
+        grid-area: header;
+        height: 55px;
+        border-bottom: 3px solid lightgrey;
+        display: grid;
+        grid-template-columns: 150px 1fr 250px;
+        padding: 0 10px 0 10px;
+        margin-bottom: 10px;
+        position: fixed;
+        top: -0.2em;
+        width: 100%;
+        z-index: 1;
+        background: white;
+    }
+    
+    .a{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .c{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr)
+    }
+
+    .nav_button {
+        position: relative;
+        top: 10px;
+    }
+    
+    .mini_logo {
+        position: relative;
+        top: 6px;
+    }
+    
+    
+    .b form {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    #search{
+        font-size: 103%;
+        width: 100%;
+        position: relative;
+        top: 12px;
+        padding: 4px;
+    }
+
+    .search_btn {
+        float: right;
+        position: relative;
+        top: -17px;
+        height: 28px;
+        width: 40px;
+        left: 10px;
+        }
+    
+    .apps-button {
+        position: relative;
+        top: 17px;
+        left: 20px;
+        }
+    
+    .upload {
+        position: relative;
+        top: 13px;
+        left: 17px;
+        }
+    
+    .bell_icon {
+        position: relative;
+        top: 18px;
+        left: 20px;
+        }
+    
+    .profile_icon {
+        width: 45px;
+        position: relative;
+        top: 5px;
+        left: 5px;
+        }
+
+/* Main-wrapper */
+    .main-wrapper{
+        display: grid;
+        margin-top: 1.5em;
+        grid-template-columns: 1fr minmax(200px, 90em) 1fr;
+        margin-top: 5em;
+        width: 
+    }
+    
+    
+/* Main */
+    main {
+        margin: 0 1.8em 0 1.8em;
+        display: grid;
+        grid-gap: 1.5em;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.2fr 1fr;
+       grid-template-areas: "video video aside"
+           "section section aside";    
+    }
+    
+/* Section */
+section{
+    grid-area: section;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-rows: auto 1fr;
+    
+}
+
+.comm {
+    
+}
+
+.comm1 {
+    
+    
+}
+
+.rtyu {
+   
+}
+
+.r {
+    width: 26.4%;
+    position: relative;
+    top: 1em;
+}
+
+.t {
+    position: relative;
+    left: 10em;
+    bottom: 0.3em;
+    width: 20%;
+}
+
+.t p {
+    position: relative;
+    left: 2.5em;
+    bottom: 1.5em;
+    color: gray;
+    font-size: 0.9em;
+}
+
+.t a {
+    text-decoration: none;
+}
+
+.y {
+    width: 8%;
+}
+
+.y img {
+    width: 3.3em;
+}
+
+.u {
+    position: relative;
+    left: 5em;
+    bottom: 3em;
+    margin-right: 5em;
+}
+
+.u input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    color: gray;
+    font-size: 1em;
+}
+
+
+
+.comments p,
+.comments a {
+    margin-left: 4.5em;
+    position: relative;
+}
+
+.CJusticeHappen21 {
+    position: relative;
+    bottom: 3em;
+    font-size: 0.86em;
+}
+
+.CJusticeHappen21 a{
+    text-decoration: none;
+    color: gray;
+    position: relative;
+    right: 4em;
+}
+
+.When {
+    position: relative;
+    bottom: 2em;
+    line-height: 1.3em;
+}
+
+.likes {
+    display: grid;
+    grid-template-columns: repeat(4, 3em);
+    width: 20em;
+    font-size: 0.86em;
+    position: relative;
+    bottom: 2em;
+}
+
+.f {
+    position: relative;
+    top: 0.5em;
+    text-decoration: none;
+    color: gray;
+}
+
+.View {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    bottom: 0.9em;
+}
+
+/* Video */
+.video {
+    grid-area: video;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 2em;
+}
+
+.video,
+section {
+    font-size: 0.9em;
+}
+
+.describe1 p:first-of-type {
+    margin-bottom: 1em;
+}
+
+.describe1 p:last-of-type {
+    float: left;
+}
+
+.describe1 img {
+    float: right;
+}
+
+.describe1 {
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 1em;
+    padding-bottom: 2em;
+    margin-top: 1em;
+}
+
+.name {
+    float: left;
+}
+
+.subscribed {
+    float: right;
+}
+
+
+
+.describe2 p {
+    margin-top: 2em;
+    float: left;
+}
+
+.describe2 p:first-of-type {
+    margin-right: 6em;
+}
+
+.more {
+    margin-top: 14em;
+    font-size: 0.85em;
+}
+
+.more a {
+    text-decoration: none;
+    color: gray;
+}
+
+
+
+.video-container {
+  position: relative;
+  padding-bottom: 52.4%; /*16:9*/
+  padding-top: 30px; 
+  height: 0; 
+  overflow: hidden;
+}
+ 
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/* Aside */
+aside {
+    grid-area: aside;
+}
+
+.first-img-aside img{
+    margin-bottom: 1em;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 1em;
+}
+
+.up-next-autoplay {
+    margin: 0.4em 0 2em 0;
+}
+
+.up-next-autoplay a {
+    float: right;
+    text-decoration: none;
+    color: gray;
+    font-size: 0.75em;
+    font-weight: bold;
+}
+
+.up-next-autoplay p {
+    float: left;
+    font-size: 0.97em;
+}
+
+.l {
+    padding-bottom: 0.3em
+}
+
+.show-more {
+    min-width: 38em;
+    width: 100%;
+    background: lightgray;
+    color: gray;
+    font-size: 0.75em;
+    font-weight: bold;
+    padding: 1em;
+    text-align: center;
+}
+
+.show-more a {
+    text-decoration: none;
+    color: gray;
+}
+ 
+.s {
+  
+} 
+ 
+@media only screen and (max-width: 1002px)  {
+     main {
+        margin: 0 1.8em 0 1.8em;
+        display: grid;
+        grid-gap: 1.5em;
+         grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 1fr 0.55fr;
+       grid-template-areas:       "video"
+           "aside"
+           "section";    
+    }
+    
+    
+    .video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+    
+    
+    aside {
+        width: 50%;
+    }
+    
+    .up-next-autoplay {
+        width: 200%;
+    }
+    
+}
+
+
+@media only screen and (max-width: 560px){
+    body{
+        min-width: 473px;
+    }
+    
+}
